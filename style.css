@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/*-----------------Body Customization--------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans';
+}
+
+main {
+    background-color: hsl(185, 75%, 39%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: top -50vh right 55vw, top 80vh left 40vw;
+}
+
+/*---------------------Card------------------------*/
+
+.card {
+    margin: 200px auto;
+    padding: 110px 0;
+    width: 350px;
+    background-image: url(./images/bg-pattern-card.svg);
+    background-repeat: repeat-x;
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+.name, .age, .number {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.age {
+    margin-left: 10px;
+    color: hsl(229, 23%, 23%);
+}
+
+.city {
+    margin: 5px 0 25px 0;
+    color: hsl(229, 23%, 23%);
+}
+
+.name-age {
+    display: flex;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid hsl(0, 0%, 59%);
+}
+
+.description {
+    font-weight: 400;
+    font-size: 14px;
+    color: hsl(229, 23%, 23%);
+}
+
+.social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.social-column {
+    margin: 30px 25px -70px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------------Standard Footer--------------*/
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    margin: 5px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*---------------------Responsive----------------*/
+
+@media (max-width: 414px) {
+    main {
+        background-position: bottom 40vh right 30vw, top 50vh left 25vw;
+    }
+}
